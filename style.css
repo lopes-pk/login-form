@@ -68,7 +68,7 @@ html {
 .botao__container {
   display: flex;
   justify-content: space-around;
-  gap: 26%;
+  gap: 34%;
   width: 82.5%;
   margin: 2.8em auto 0;
 }
@@ -101,7 +101,7 @@ html {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .botao__container button:focus{
-    outline: none;
+    outline:none;
 }
 .invalidated {
   animation: vibrationError 0.1s linear;
