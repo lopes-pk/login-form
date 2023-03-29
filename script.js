@@ -29,12 +29,19 @@ form.addEventListener("submit", function (event) {
     senhaUsuario.classList.add("invalidated");
     timeOut(senhaUsuario);
   }
+  if (condição1 === true) {
+    emailUsuario.classList.remove("invalidated");
+  }
+  if (condição2 === true) {
+    senhaUsuario.classList.remove("invalidated");
+    
+  }
 });
 
 function timeOut(element) {
   setTimeout(function () {
     element.classList.remove("invalidated");
-  }, 2000);
+  }, 3000);
 }
 
 
