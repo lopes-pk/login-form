@@ -100,7 +100,9 @@ html {
   color: rgba(0, 0, 0, 0.7);
   background-color: rgba(255, 255, 255, 0.3);
 }
-
+.botao__container button:focus{
+    outline: none;
+}
 .invalidated {
   animation: vibrationError 0.1s linear;
   background-color: rgba(234, 83, 83, 0.3);

@@ -18,13 +18,12 @@ form.addEventListener("submit", function (event) {
   let condição2 = senha === senhaCadastrada;
 
   if (condição1 && condição2) {
-    console.log("suas credenciais estão corretas!");
+    alert('LOGADO COM SUCESSO!')
     emailUsuario.classList.remove("invalidated");
     senhaUsuario.classList.remove("invalidated");
   } else if (condição1 !== true) {
     emailUsuario.classList.add("invalidated");
     timeOut(emailUsuario);
-    console.log(emailUsuario);
   }
   if (condição2 !== true) {
     senhaUsuario.classList.add("invalidated");
