@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dynamic css</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="screen">
+    <form class="box" id="form">
+      <h2 class="titulo">login</h2>
+      <label for="email">email</label>
+      <input
+        autocomplete="off"
+        class="campo"
+        type="email"
+        id="email"
+        onkeypress="return event.charCode !== 32"
+        required
+      />
+      <label for="senha">senha</label>
+      <input
+        autocomplete="off"
+        class="campo"
+        type="password"
+        id="senha"
+        onkeypress="return event.charCode !== 32"
+        required
+      />
+      <div class="botao__container">
+        <button id="logar">logar</button>
+        <button id="cancelar">limpar</button>
+      </div>
+    </form>
+    <script src="/script.js"></script>
+  </body>
+</html>
